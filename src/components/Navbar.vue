@@ -23,7 +23,13 @@
             v-for="{ title, link } in menuItems"
             :key="title"
           >
-            <router-link class="nav-link" aria-current="page" :to="link" active-class="active">
+            <router-link
+              class="nav-link"
+              aria-current="page"
+              :to="link"
+              active-class="active"
+              exact
+            >
               {{ title }}
             </router-link>
           </li>
