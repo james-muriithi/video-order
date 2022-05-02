@@ -1,0 +1,15 @@
+body,
+html,
+#app {
+    font-family: $font-family;
+    height: 100%;
+}
+
+.btn:focus,
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.error-message:first-letter {
+    text-transform: capitalize !important;
+}

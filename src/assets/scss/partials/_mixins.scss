@@ -1,0 +1,3 @@
+@mixin transition($element: all, $speed: 0.2s) {
+    transition: $element $speed linear;
+}
