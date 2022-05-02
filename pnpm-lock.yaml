@@ -11,8 +11,8 @@ specifiers:
   core-js: ^3.8.3
   eslint: ^7.32.0
   eslint-config-airbnb-base: ^15.0.0
-  eslint-config-prettier: ^8.5.0
   eslint-plugin-vue: ^8.0.3
+  popper.js: ^1.16.1
   vue: ^2.6.14
   vue-router: ^3.5.1
   vue-template-compiler: ^2.6.14
@@ -20,6 +20,7 @@ specifiers:
 dependencies:
   bootstrap: 5.1.3
   core-js: 3.22.4
+  popper.js: 1.16.1
   vue: 2.6.14
   vue-router: 3.5.3
 
@@ -32,7 +33,6 @@ devDependencies:
   '@vue/cli-service': 5.0.4_eca57e9d0f7a75135064f994896b080d
   eslint: 7.32.0
   eslint-config-airbnb-base: 15.0.0_eslint@7.32.0
-  eslint-config-prettier: 8.5.0_eslint@7.32.0
   eslint-plugin-vue: 8.7.1_eslint@7.32.0
   vue-template-compiler: 2.6.14
 
@@ -3173,15 +3173,6 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-config-prettier/8.5.0_eslint@7.32.0:
-    resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
-    hasBin: true
-    peerDependencies:
-      eslint: '>=7.0.0'
-    dependencies:
-      eslint: 7.32.0
-    dev: true
-
   /eslint-plugin-vue/8.7.1_eslint@7.32.0:
     resolution: {integrity: sha512-28sbtm4l4cOzoO1LtzQPxfxhQABararUb1JtqusQqObJpWX2e/gmVyeYVfepizPFne0Q5cILkYGiBoV36L12Wg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -4921,6 +4912,11 @@ packages:
     dependencies:
       find-up: 4.1.0
     dev: true
+
+  /popper.js/1.16.1:
+    resolution: {integrity: sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==}
+    deprecated: You can find the new Popper v2 at @popperjs/core, this package is dedicated to the legacy v1
+    dev: false
 
   /portfinder/1.0.28:
     resolution: {integrity: sha512-Se+2isanIcEqf2XMHjyUKskczxbPH7dQnlMjXX6+dybayyHvAf/TCgyMRlzf/B6QDhAEFOGes0pzRo3by4AbMA==}
