@@ -41,31 +41,15 @@
 
 <script>
 import Logo from "./Logo.vue";
+import menuItems from "@/utils/menu";
 /* eslint-disable */
 export default {
   components: { Logo },
   name: "Navbar",
-  data() {
-    return {
-      menuItems: [
-        {
-          title: "Home",
-          link: "/",
-        },
-        {
-          title: "Popular",
-          link: "#",
-        },
-        {
-          title: "About",
-          link: "#",
-        },
-        {
-          title: "Account",
-          link: "#",
-        },
-      ],
-    };
-  },
+  computed: {
+    menuItems() {
+      return menuItems
+    }
+  }
 };
 </script>

@@ -13,3 +13,9 @@ html,
 .error-message:first-letter {
     text-transform: capitalize !important;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
