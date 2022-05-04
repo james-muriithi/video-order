@@ -40,7 +40,9 @@ export default {
       const { tweetId } = parseTweetUrl(this.url);
       if (!tweetId) {
         this.error = "Invalid tweet url";
+        return;
       }
+      this.$router.push({ name: "download", params: { tweetId } });
     },
   },
   created() {

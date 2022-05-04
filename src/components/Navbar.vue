@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0 fw-bold position-absolute w-100">
     <div class="container-fluid">
-      <router-link class="navbar-brand" to="#">
+      <router-link class="navbar-brand" :to="{name: 'home'}">
         <Logo />
         <span class="ms-2 fw-bold fs-6">Video Order</span>
       </router-link>
