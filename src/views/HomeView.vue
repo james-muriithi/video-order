@@ -43,5 +43,8 @@ export default {
       }
     },
   },
+  created() {
+    this.url = this.$route.query.url ? this.$route.query.url : "";
+  },
 };
 </script>

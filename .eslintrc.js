@@ -31,6 +31,7 @@ module.exports = {
       "vue/this-in-template": "off",
       "import/prefer-default-export": "off",
       "no-param-reassign": "off",
-      "import/extensions": "off"
+      "import/extensions": "off",
+      "vue/multi-word-component-names": "off"
     }
 };
