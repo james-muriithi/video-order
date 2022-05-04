@@ -4,9 +4,10 @@
       type="text"
       class="form-control rounded-pill ps-3 py-2 border-0"
       placeholder="Enter tweet URL"
-      v-model="tweetUrl"
+      :value="value"
+      @input="$emit('input', $event.target.value)"
     />
-    <button class="btn btn-search position-absolute" aria-label="search">
+    <button class="btn btn-search position-absolute" aria-label="search" @click="$emit('search')">
       <svg
         enable-background="new 0 0 96 96"
         height="33px"
@@ -29,11 +30,13 @@
 <script>
 export default {
   name: "SearchBar",
-  data() {
-    return {
-      tweetUrl: "",
-    };
-  },
+  emits: ['input', 'search'],
+  props: {
+    value: {
+      required: true,
+      type: String
+    }
+  }
 };
 </script>
 
