@@ -6,6 +6,7 @@
       placeholder="Enter tweet URL"
       :value="value"
       @input="$emit('input', $event.target.value)"
+      @keypress.enter="$emit('search')"
     />
     <button class="btn btn-search position-absolute" aria-label="search" @click="$emit('search')">
       <svg
